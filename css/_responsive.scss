@@ -1,4 +1,4 @@
-@media (max-width: 780px) {
+@media (max-width: 800px) {
  #flow {
   h4 {
     margin-bottom: 2em;
@@ -19,4 +19,32 @@
     }
   }
  }
+ .twentytwenty-wrapper {
+  &:before,
+  &:after {
+    font-size: .75em;
+    padding: .15em .7em;
+  }
+ }
+ .demo,
+ .twentytwenty-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+ }
+ #reveal .kites article {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  float: none;
+
+  svg {
+    width: 50%;
+  }
+ }
+}
+
+body.mobile {
+  .zoom-buttons {
+    display: none;
+  }
 }

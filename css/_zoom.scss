@@ -1,5 +1,5 @@
 #zoomable {
-  width: 780px;
+  max-width: 780px;
 }
 .zoom-wrap {
   overflow: hidden;
@@ -12,6 +12,8 @@
   @include flex-props(row nowrap, space-between, space-between, center);
   .range-wrap {
     flex: 1 1 auto;
+    -moz-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
     position: relative;
     height: 30px;
     &:after {

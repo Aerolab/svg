@@ -8,9 +8,11 @@
   h3 {
     color: #666666;
     font-size: 1.5em;
+    padding: 0 2em;
   }
 
-  > img {
+  > img,
+  > svg {
     width: 100%;
     max-width: 640px;
   }
@@ -23,18 +25,19 @@
   padding: 0 2em;
   &:before,
   &:after {
-    background: $main;
-    color: #fff;
+    border: 2px solid $main;
+    color: $main;
     position: absolute;
     top: 0px;
     left: 2em;
-    padding: .5em 1em;
+    padding: .4em .9em;
     display: block;
     content: attr(data-before);
     z-index: 10;
   }
   &:after {
-    background: $highlight;
+    border: 2px solid $highlight;
+    color: $highlight;
     left: auto;
     right: 2em;
     content: attr(data-after);
@@ -57,4 +60,23 @@
   font-family: "Lato", sans-serif;
   letter-spacing: 0;
   font-weight: bold;
+}
+
+.hover {
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 10px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 10px);}
+    to {-moz-transform: translate(0, -0px);}    
 }
