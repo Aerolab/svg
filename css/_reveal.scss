@@ -88,25 +88,68 @@
     animation: lineAnim 5s alternate infinite;
     -moz-animation: lineAnim 5s alternate infinite;
     -webkit-animation: lineAnim 5s alternate infinite;
+
+    fill: #fff;
+    -moz-fill: #fff;
+    -webkit-fill: #fff;
 }
 
 @-webkit-keyframes lineAnim{
-    to {-webkit-stroke-dashoffset: 0;stroke-dashoffset: 0;}
+  to {
+      -webkit-stroke-dashoffset: 0;
+      stroke-dashoffset: 0;
+  }
 }
 @-moz-keyframes lineAnim{
-    to {-moz-stroke-dashoffset: 0;}
+  to {
+      -moz-stroke-dashoffset: 0;
+  }
 }
 @keyframes lineAnim{
-    to {stroke-dashoffset: 0;}
+  to {
+      stroke-dashoffset: 0;
+  }
 }
 
+
+
 .barrilete4 {
-    stroke-dasharray: 10;
-    stroke-dashoffset: 100;
+    fill: #fff;
+    -moz-fill: #fff;
+    -webkit-fill: #fff;
 
-    -moz-stroke-dasharray: 10;
-    -moz-stroke-dashoffset: 100;
+    animation: fillAnim 5s alternate infinite;
+    -moz-animation: fillAnim 5s alternate infinite;
+    -webkit-animation: fillAnim 5s alternate infinite;
+}
 
-    -webkit-stroke-dasharray: 10;
-    -webkit-stroke-dashoffset: 100;
+@-webkit-keyframes fillAnim{
+
+    0%   {fill: #fff; -webkit-fill: #fff;}
+    25%  {fill: #F47B20; -webkit-fill: #F47B20;}
+    50%  {fill: #09c; -webkit-fill: #09c;}
+    100% {
+        -webkit-stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
+        fill: #F47B20; -webkit-fill: #F47B20;
+    }
+}
+@-moz-keyframes fillAnim{
+
+    0%   {-moz-fill: #fff;}
+    25%  {-moz-fill: #F47B20;}
+    50%  {-moz-fill: #09c;}
+    100% {
+        -moz-stroke-dashoffset: 0;
+        -moz-fill: #F47B20;
+    }
+}
+@keyframes fillAnim{
+
+    0%   {fill: #fff;}
+    25%  {fill: #F47B20;}
+    50%  {fill: #09c;}
+    100% {
+        fill: #F47B20;
+    }
 }
