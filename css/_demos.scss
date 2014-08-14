@@ -67,6 +67,16 @@
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
+
+    -moz-animation-name: Floatingx;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+
+    animation-name: Floatingx;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes Floatingx{
@@ -75,8 +85,13 @@
     to {-webkit-transform: translate(0, -0px);    }    
 }
     
-@-moz-keyframes Floating{
+@-moz-keyframes Floatingx{
     from {-moz-transform:translate(0, 0px);}
     65% {-moz-transform:translate(0, 10px);}
     to {-moz-transform: translate(0, -0px);}    
+}
+@keyframes Floatingx{
+    from {transform:translate(0, 0px);}
+    65% {transform:translate(0, 10px);}
+    to {transform: translate(0, -0px);}    
 }

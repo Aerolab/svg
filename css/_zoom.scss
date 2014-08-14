@@ -9,7 +9,7 @@
 
 .zoom-buttons {
   @include display-flex;
-  @include flex-props(row nowrap, space-between, space-between, center);
+  @include flex-props(row, nowrap, space-between, space-between, center);
   .range-wrap {
     flex: 1 1 auto;
     -moz-flex: 1 1 auto;

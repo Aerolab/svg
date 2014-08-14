@@ -7,7 +7,7 @@
   padding: 2em;
 
   @include display-flex;
-  @include flex-props(column nowrap, center, center, center);
+  @include flex-props(column, wrap, center, center, center);
 
   h1 {
     font-size: 3.25em;

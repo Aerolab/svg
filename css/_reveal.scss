@@ -35,6 +35,8 @@
         letter-spacing: 1px;
         font-weight: bold;
         padding: .5em 1.5em;
+        transition: background ease-in-out .15s, color ease-in-out .15s;
+        -moz-transition: background ease-in-out .15s, color ease-in-out .15s;
         -webkit-transition: background ease-in-out .15s, color ease-in-out .15s;
 
         &:hover {
@@ -51,24 +53,60 @@
 .barrilete2 {
     stroke-dasharray: 10;
     stroke-dashoffset: 100;
+
+    -moz-stroke-dasharray: 10;
+    -moz-stroke-dashoffset: 100;
+
+    -webkit-stroke-dasharray: 10;
+    -webkit-stroke-dashoffset: 100;
+
+    animation: dash 5s alternate infinite;
+    -moz-animation: dash 5s alternate infinite;
     -webkit-animation: dash 5s alternate infinite;
 }
 
 @-webkit-keyframes dash{
+    to {-webkit-stroke-dashoffset: 0;stroke-dashoffset: 0;}
+}
+@-moz-keyframes dash{
+    to {-moz-stroke-dashoffset: 0;}
+}
+@keyframes dash{
     to {stroke-dashoffset: 0;}
 }
 
 .barrilete3 {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
+
+    -moz-stroke-dasharray: 1000;
+    -moz-stroke-dashoffset: 1000;
+
+    -webkit-stroke-dasharray: 1000;
+    -webkit-stroke-dashoffset: 1000;
+
+    animation: lineAnim 5s alternate infinite;
+    -moz-animation: lineAnim 5s alternate infinite;
     -webkit-animation: lineAnim 5s alternate infinite;
 }
 
 @-webkit-keyframes lineAnim{
+    to {-webkit-stroke-dashoffset: 0;stroke-dashoffset: 0;}
+}
+@-moz-keyframes lineAnim{
+    to {-moz-stroke-dashoffset: 0;}
+}
+@keyframes lineAnim{
     to {stroke-dashoffset: 0;}
 }
 
 .barrilete4 {
     stroke-dasharray: 10;
     stroke-dashoffset: 100;
+
+    -moz-stroke-dasharray: 10;
+    -moz-stroke-dashoffset: 100;
+
+    -webkit-stroke-dasharray: 10;
+    -webkit-stroke-dashoffset: 100;
 }
