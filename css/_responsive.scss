@@ -1,0 +1,22 @@
+@media (max-width: 780px) {
+ #flow {
+  h4 {
+    margin-bottom: 2em;
+  }
+  article {
+    display: block;
+    .text {
+      width: 100%;
+      min-height: 0px;
+    }
+    .image {
+      border-top: none;
+      img {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+ }
+}

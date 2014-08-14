@@ -1,0 +1,76 @@
+#flow {
+  background: $main;
+  color: #fff;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  counter-reset: step;
+  padding: 1.5em 2em;
+
+  article {
+    @include display-flex;
+    @include flex-props(row nowrap, space-between, stretch, stretch);
+    margin: 0 auto 2em;
+    max-width: 950px;
+    counter-increment: step;
+
+    .text {
+      width: 286px;
+      border: 2px solid #fff;
+      margin-right: 2em;
+      padding: 0 1em;
+      min-height: 310px;
+      position: relative;
+
+      &:before {
+        content: counter(step);
+        background: $main;
+        width: 45px;
+        height: 45px;
+        display: block;
+        font-size: 1.6em;
+        font-weight: bold;
+        line-height: 43px;
+        text-align: center;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: -27px;
+        left: -27px;
+      }
+    }
+    .image {
+      border: 2px solid #fff;
+      flex: 1 1 auto;
+      position: relative;
+      overflow: hidden;
+      img {
+        margin: 0;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    &.last-step {
+      margin-bottom: 4em;
+    }
+    &.infographic {
+      position: relative;
+      padding: 0;
+      
+      &:after {
+        padding-bottom: 62%;
+        display: block;
+        content: "";
+      }
+
+      svg {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}

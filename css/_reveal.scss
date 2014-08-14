@@ -1,0 +1,74 @@
+#reveal {
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+  padding: 2em;
+  color: $copy;
+  font-size: 1.125em;
+  line-height: 1.5em;
+
+  h4 {
+    color: $heading;
+    margin-bottom: 1em;
+  }
+
+  .kites {
+    overflow: hidden;
+
+    article {
+      width: 49.9%;
+      padding: 2em 3em;
+      float: left;
+      text-align: center;
+
+      h5 {
+        font-size: 1.125em;
+      }
+
+      a {
+        color: $main;
+        border: 2px solid $main;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: .75em;
+        letter-spacing: 1px;
+        font-weight: bold;
+        padding: .5em 1.5em;
+        -webkit-transition: background ease-in-out .15s, color ease-in-out .15s;
+
+        &:hover {
+          color: #fff;
+          background: $main;
+        }
+      }
+    }
+  }
+}
+
+/*drawing*/
+
+.barrilete2 {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 100;
+    -webkit-animation: dash 5s alternate infinite;
+}
+
+@-webkit-keyframes dash{
+    to {stroke-dashoffset: 0;}
+}
+
+.barrilete3 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: lineAnim 5s alternate infinite;
+}
+
+@-webkit-keyframes lineAnim{
+    to {stroke-dashoffset: 0;}
+}
+
+.barrilete4 {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 100;
+}

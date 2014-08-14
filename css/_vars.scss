@@ -1,0 +1,36 @@
+$cite: #a6a6a6;
+$label: #6a9bff;
+$main: #0099cc;
+$highlight: #ec7b23;
+$hero-text: #c5edfa;
+$copy: #a1a1a1;
+$heading: #666;
+
+@mixin flex($val) {
+	flex: $val;
+	-webkit-flex: $val;
+	-moz-flex: $val;
+}
+
+@mixin display-flex {
+	display: flex;
+	display: -webkit-flex;
+	-moz-display: flex;
+}
+
+@mixin flex-props($flow, $justify, $content, $items) {
+	flex-flow: $flow;
+	justify-content: $justify;
+	align-content: $content;
+	align-items: $items;
+
+	-webkit-flex-flow: $flow;
+	-webkit-justify-content: $justify;
+	-webkit-align-content: $content;
+	-webkit-align-items: $items;
+
+	-moz-flex-flow: $flow;
+	-moz-justify-content: $justify;
+	-moz-align-content: $content;
+	-moz-align-items: $items;
+}

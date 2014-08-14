@@ -1,0 +1,5 @@
+# Ignore sass-cache files.
+*.sass-cache*
+
+# Ignore DS_Store
+*.DS_Store*
