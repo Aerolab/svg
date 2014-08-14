@@ -11,24 +11,24 @@
 
   <section id="hero">
     <header class="animated fadeInDown">
-      <a href="" id="logo"><img src="images/logo.png" alt=""></a>
+      <a href="" id="logo"><img src="images/kite.svg" width="54" alt=""></a>
       <h1>The SVG Workflow</h1>
       <h2>From Illustrator to &lt;code&gt; to animations</h2>
-      <span class="bordered">Breaking the Pixel-Perfect Myth</span>
+      <span class="bordered">Trying to break the Pixel-Perfect Myth</span>
     </header>
     <article class="animated fadeInDown">
-      <p>In <a href="">Aerolab</a> we are always very curious and since we love illustrating this was a good moment to brake with the PP Myth (PP is short for Pixel Perfect). We wanted to find the best workflow from Illustrator to svg, to code. So we ended up doing all of these tests to prove our the best workflow. This was going to save us a lot of time so we wanted to get it right.</p>
-      <p>We started working with <a href="">SVG</a> a while back since almost all browsers support them, they’re some that don’t but we don’t like IE anyways :P Check out <a href="">caniuse</a> to see who exactly doesn’t support them.</p>
+      <p>In <a href="http://aerolab.co">Aerolab</a> we are always very curious and since we love illustrating this was a good moment to mess with the PP Myth (PP is short for Pixel Perfect). We wanted to find the best workflow from Illustrator to svg, to code. So we ended up doing all of these tests to find the best workflow. This was going to save us a lot of time so we wanted to get it right.</p>
+      <p>We started working with <a href="http://">SVG</a> a while back. Of course there are some browsers that don’t support it yet, but we don’t like IE anyways :P Check out <a href="http://caniuse.com/svg">caniuse</a> to <a href="http://caniuse.com/#feat=svg-html5">find out more</a> about this.</p>
       <p><strong>Enjoy! Any feedback is more than welcome :)</strong></p>
     </article>
   </section>
 
   <section class="demo wow animated fadeInDown">
     <div id="compare-1" class="twentytwenty-container">
+      <img src="images/building-01.svg" width="612" alt="">
       <img src="images/demo-vector.png" alt="">
-      <img src="images/demo-pixel.png" alt="">
     </div>
-    <cite>SVG file from illustrator - Pixel Perfected</cite>
+    <cite>SVG file from illustrator - Pixel Perfect</cite>
   </section>
 
   <section class="demo wow animated fadeInDown">
@@ -37,10 +37,10 @@
 
   <section class="demo wow animated fadeInDown">
     <div id="compare-2" class="twentytwenty-container">
-      <img src="images/demo-vector.png" alt="">
-      <img src="images/demo-pixel.png" alt="">
+      <img src="images/building-02.svg" width="612" alt="">
+      <img src="images/building-02.jpg" alt="">
     </div>
-    <cite>SVG file from illustrator - Pixel Perfected</cite>
+    <cite>SVG file from illustrator - Not Pixel Perfect</cite>
   </section>
 
   <section class="demo wow animated fadeInDown">
@@ -49,8 +49,8 @@
 
   <section class="demo wow animated fadeInDown">
     <div id="compare-3" class="twentytwenty-container">
-      <img src="images/demo-vector.png" alt="">
-      <img src="images/demo-pixel.png" alt="">
+      <img src="images/building-01.svg" width="612" alt="">
+      <img src="images/building-02.svg" width="612" alt="">
     </div>
     <cite>SVG file from illustrator - Pixel Perfected</cite>
   </section>
@@ -65,6 +65,32 @@
       <div class="range-wrap"><input type="range" class="zoom-range"></div>
       <button class="zoom-in">+</button>
     </div>
+  </section>
+
+  <section id="performance" class="demo wow animated fadeInDown">
+    <h4>Performance is also very important, check out the differences</h4>
+    <ul>
+      <li>
+        <h5>PNG</h5>
+        <p>HTTP Requests: 1<br>File size: 2.43KB</p>
+      </li>
+      <li>
+        <h5>RAW SVG EMBED</h5>
+        <p>HTTP Requests: 1<br>File size: 2.43KB</p>
+      </li>
+      <li>
+        <h5>FLATTEN SVG EMBED</h5>
+        <p>HTTP Requests: 1<br>File size: 2.43KB</p>
+      </li>
+      <li>
+        <h5>RAW SVG INLINE</h5>
+        <p>HTTP Requests: 1<br>File size: 2.43KB</p>
+      </li>
+      <li>
+        <h5>OPTIM  SVG INLINE</h5>
+        <p>HTTP Requests: 1<br>File size: 2.43KB</p>
+      </li>
+    </ul>
   </section>
 
   <section class="demo wow animated fadeInDown">
@@ -8745,7 +8771,6 @@
           c-1.627,1.274-2.723,1.966-3.268,2.718c-0.566,0.78-0.537,1.84,0.158,2.583C4.259,70.233,4.958,70.276,5.579,70.099z"/>
         </svg>
         <h5>1. Shape must have a stroke</h5>
-        <a href="" class="view-code kite-1">View code</a>
       </article>
 
       <article class="wow animated fadeInDown">
@@ -8766,7 +8791,6 @@
           c-1.627,1.274-2.723,1.966-3.268,2.718c-0.566,0.78-0.537,1.84,0.158,2.583C4.259,70.233,4.958,70.276,5.579,70.099z"/>
         </svg>
         <h5>2. Strokes can be dashed</h5>
-        <a href="" class="view-code kite-2">View code</a>
       </article>
 
       <article class="wow animated fadeInDown">
@@ -8786,8 +8810,7 @@
           c-5.252-0.316-9.297-3.799-12.082-7.15c-4.516-5.437-8.496-11.562-20.145-12.518C20.03,55.851,9.993,61.592,6.673,64.19
           c-1.627,1.274-2.723,1.966-3.268,2.718c-0.566,0.78-0.537,1.84,0.158,2.583C4.259,70.233,4.958,70.276,5.579,70.099z"/>
         </svg>
-        <h5>3. Shape must have a stroke</h5>
-        <a href="" class="view-code kite-1">View code</a>
+        <h5>3. We can also "offset" the stroke, which moves the position of those dashes</h5>
       </article>
 
       <article class="wow animated fadeInDown">
@@ -8807,8 +8830,7 @@
           c-5.252-0.316-9.297-3.799-12.082-7.15c-4.516-5.437-8.496-11.562-20.145-12.518C20.03,55.851,9.993,61.592,6.673,64.19
           c-1.627,1.274-2.723,1.966-3.268,2.718c-0.566,0.78-0.537,1.84,0.158,2.583C4.259,70.233,4.958,70.276,5.579,70.099z"/>
         </svg>
-        <h5>4. Strokes can be dashed</h5>
-        <a href="" class="view-code kite-2">View code</a>
+        <h5>4. Imagine a dash so long it covers the entire shape</h5>
       </article>
     </div>
   </section>

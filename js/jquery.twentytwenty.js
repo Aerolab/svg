@@ -7,13 +7,13 @@
       var sliderPct = options.default_offset_pct;
       var container = $(this);
       var sliderOrientation = options.orientation;
-      var beforeText = options.before;
+      var beforeText = String(options.before);
       var afterText = options.after;
       var beforeDirection = (sliderOrientation === 'vertical') ? 'down' : 'left';
       var afterDirection = (sliderOrientation === 'vertical') ? 'up' : 'right';
       
       
-      container.wrap("<div class='twentytwenty-wrapper twentytwenty-" + sliderOrientation + "' data-before=" + beforeText + " data-after=" + afterText + "></div>");
+      container.wrap("<div class='twentytwenty-wrapper twentytwenty-" + sliderOrientation + "' data-before='" + beforeText + "' data-after='" + afterText + "'></div>");
       container.append("<div class='twentytwenty-overlay'></div>");
       var beforeImg = container.find("img:first");
       var afterImg = container.find("img:last");

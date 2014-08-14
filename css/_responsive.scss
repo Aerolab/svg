@@ -1,3 +1,21 @@
+@media (max-width: 930px) {
+  #performance {
+    ul {
+      width: 50%;
+      margin: 0 auto;
+    }
+    li {
+      width: 47%;
+      margin: 0;
+      margin-bottom: 5%;
+
+      &:nth-child(odd) {
+        margin-right: 6%;
+      }
+    }
+  }
+}
+
 @media (max-width: 800px) {
  #flow {
   h4 {
@@ -41,6 +59,16 @@
     width: 50%;
   }
  }
+}
+
+@media (max-width: 720px) {
+  #performance {
+    ul { width: 75%; }
+    li {
+      width: 100%;
+      float: none;
+    }
+  }
 }
 
 body.mobile {

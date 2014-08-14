@@ -10,8 +10,8 @@ $(document).ready(function() {
     after: "PNG"
   });
   $("#compare-3").twentytwenty({
-    before: "SVG",
-    after: "PNG"
+    before: "SVG PP",
+    after: "SVG - Not PP"
   });
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {

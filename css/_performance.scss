@@ -1,0 +1,33 @@
+#performance {
+  h4 {
+    font-size: 1.125em;
+    color: $heading;
+    padding: 0 2em;
+  }
+  ul {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    color: $performance;
+    display: block;
+    float: left;
+    width: 18%;
+    margin: 0 1%;
+    padding: 0;
+    border: 2px solid $performance;
+    text-align: center;
+
+    h5 {
+      font-size: 1em;
+      display: block;
+      border-bottom: 2px solid $performance;
+      margin: 0;
+      padding: .25em 0;
+    }
+    p {
+      font-size: 1.125em;
+    }
+  }
+}
